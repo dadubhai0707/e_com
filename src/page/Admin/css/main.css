@@ -1,0 +1,403 @@
+.admin-container{
+  display: flex;
+}
+/* _______________________________________________ */
+/* navigation of admin container */
+/* _______________________________________________ */
+.admin-sidevbar-container{
+  width: 20%;
+  height: 100vh;
+  display: flex; 
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 10px;
+  padding-top: 30px;
+}
+.admin-sidevbar-container h1{
+   padding: 10px;
+   align-content: center;
+   color: var(--blue);
+   font-weight: bold;
+   font-size: 1.9rem;
+
+}
+nav ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;   
+  margin-left: 10px;
+}
+nav ul li{
+  padding: 10px;
+  font-size: 19px;
+  display: flex;
+  align-content: center;
+  gap: 10px;
+}
+.active{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/* _______________________________________________ */
+/* deshbord  admin container */
+/* _______________________________________________ */
+.deshbord-container{
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+width: 100%;
+height:96vh;
+overflow-y: scroll;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+padding: 20px;
+color: var(--black);
+background-color: var(--white);
+}
+.header{
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: var(--dark-gray);
+}
+.name-profile{
+  display: flex;
+  align-items: center;
+  gap:40px;
+  position: relative;
+}
+.deshbord-header-btn{
+  width: 100px;
+  background-color: var(--red);
+  color: var(--white);
+  margin-right:  10px;
+}
+/* _________________________________________________ */
+/* Admin-Home Page Design */
+/* _____________________________________________ */
+
+.admin-boxes-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  width: 80%;
+}
+
+.box {
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box .name h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: var(--gray-2);
+}
+
+.box .Number p {
+  margin: 10px 0;
+  font-size: 2em;
+  color: #007bff;
+}
+
+.box .description p {
+  margin: 10px 0;
+  color: var(--gray-2);
+}
+
+.box .buttons .btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.box .buttons .btn:hover {
+  background-color: #0056b3;
+}
+.admin-profile-container{
+  position: absolute;
+  background-color: var(--yellow);
+  right: -10px;
+  top: 55px;
+  color: var(--black);
+  width: 500px;
+  padding: 40px;
+}
+.admin-p-change-pass{
+  width: 200px;
+  background-color: var(--blue);
+  margin-top:10px;
+}
+.admin-p-delete-pass{
+  width: 200px;
+  background-color: var(--red);
+}
+/* _________________________________________________ */
+/* Admin Catgroy Styles */
+/* _____________________________________________ */
+.Add-form{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+ margin-top: 10px;
+}
+.Add-form input{
+  padding: 10px;
+}
+
+.add-cat-btn{
+  width: 200px;
+  background-color: var(--yellow);
+}
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 10px;
+}
+
+thead{
+ background-color: #0056b3;
+}
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+color: whitesmoke;
+}
+
+.table-wrapper {
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: auto;
+  margin: auto;
+}
+
+.table-wrapper table {
+  width: 100%;
+}
+
+.table-wrapper thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.cat-table {
+  margin: auto;
+  width: 90%;
+  overflow-x: auto;
+}
+
+.table-wrapper {
+  max-height: 300px;
+  overflow-y: auto;
+  margin: auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.product-table-container {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.product-table {
+  width: 100%; /* Ensure table takes full width of container */
+  border-collapse: collapse; /* Collapse table borders for a cleaner look */
+}
+
+.product-table th, .product-table td {
+  padding: 10px; /* Space inside table cells */
+  border: 1px solid #ddd; /* Optional: border for table cells */
+}
+
+.product-table img {
+  max-width: 100%; /* Ensure images do not exceed cell width */
+  height: auto; /* Maintain aspect ratio */
+}
+/* Example styles for ASCatForm */
+input, select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.btn-add-Category{
+  background-color: var(--yellow);
+  width: 200px;
+  height: 40px;
+  float: right;
+  margin: 10px 10px;
+  }
+.cancel_order_btn{
+background-color: var(--red);
+color: var(--white);
+}
+.order_btn{
+background-color: var(--green);
+color: var(--white);
+}
+/* _________________________________________________ */
+/* Admin Product Display  */
+/* _____________________________________________ */
+.Admin-table-form-container .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+.Admin-table-form-container .buttons button{
+background-color: var(--yellow);
+color:  var(--black);
+}
+.admin-add-product-form {
+  width: 50%;
+  height: 70vh;
+  overflow-y: scroll;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.admin-add-product-form h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.admin-add-product-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-add-product-form label {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.admin-add-product-form input[type="text"],
+.admin-add-product-form input[type="file"],
+.admin-add-product-form input[type="number"],
+.admin-add-product-form select,
+.admin-add-product-form textarea {
+  /* width: 100%; */
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.admin-add-product-form textarea {
+  resize: vertical;
+  height: 100px;
+  width: 400px;
+}
+
+.admin-add-product-form .btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--yellow);
+  color: var(--black);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.admin-add-product-form .btn:hover {
+  background-color: #0056b3;
+}
+::-webkit-scrollbar {
+  width: 1.5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--yellow); /* Green scrollbar for consistency */
+  border-radius: 10px;
+}
+
+/* _______________________________________________ */
+/* order_img */
+/* ________________________________________________ */
+.order-display-list-container{
+width: 90%;
+margin: auto;
+border: 1px solid black;
+padding: 40px;
+}
+.order-display-list-container b{
+color: black;
+}
+.product_detais_order{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.order_img img{ 
+width: 200px;
+height: 200px;
+}
+
+
+.user_detail{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.Order-detail{
+display: flex;
+align-items: end;
+justify-content: space-between;
+margin: auto;
+}
+.Order-detail .buttons{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.Order-detail .buttons button{
+padding: 10px 40px;
+}
